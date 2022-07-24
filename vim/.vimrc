@@ -15,7 +15,7 @@ set nocompatible
 syntax on
 
 " Disable the default Vim startup message.
-set shortmess+=I
+" set shortmess+=I
 
 " Show line numbers.
 set number
@@ -26,7 +26,7 @@ set number
 " This is useful because you can tell, at a glance, what count is needed to
 " jump up or down to a particular line, by {count}k to go up or {count}j to go
 " down.
-" set relativenumber
+set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
@@ -78,3 +78,13 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
+colorscheme molokai
