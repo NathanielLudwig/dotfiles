@@ -162,7 +162,7 @@ set number
 set mouse=a
 set colorcolumn=80 " and give me a colored column
 " Always draw sign column. Prevent buffer moving when adding/deleting sign.
-" set signcolumn=yes
+set signcolumn=yes
 
 " <leader><leader> toggles between buffers
 nnoremap <leader><leader> <c-^>
